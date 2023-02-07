@@ -1,0 +1,48 @@
+var button1 = document.createElement('button');
+button1.innerHTML = 'Calculate';
+document.body.appendChild(button1);
+var button2 = document.createElement('button');
+button2.innerHTML = 'Print';
+document.body.appendChild(button2);
+var button3 = document.createElement('button');
+button3.innerHTML = 'Reset';
+document.body.appendChild(button3);
+var input1 = document.createElement('input');
+input1.innerHTML = 'input1';
+document.body.appendChild(input1);
+var input2 = document.createElement('input');
+input2.innerHTML = 'input2';
+document.body.appendChild(input2);
+var input3 = document.createElement('input');
+input3.innerHTML = 'input3';
+document.body.appendChild(input3);
+var input4 = document.createElement('input');
+input4.innerHTML = 'input4';
+document.body.appendChild(input4);
+var input5 = document.createElement('input');
+input5.innerHTML = 'input5';
+document.body.appendChild(input5);
+var input6 = document.createElement('input');
+input6.innerHTML = 'input6';
+document.body.appendChild(input6);
+var input7 = document.createElement('input');
+input7.innerHTML = 'input7';
+document.body.appendChild(input7);
+var output = document.createElement('output');
+output.innerHTML = 'output';
+document.body.appendChild(output);
+button1.addEventListener('click', function() {
+  output.innerHTML = input1.value + input2.value;
+});
+button2.addEventListener('click', function() {
+  window.print();
+});
+button3.addEventListener('click', function() {
+  input1.value = '';
+  input2.value = '';
+  input3.value = '';
+  input4.value = '';
+  input5.value = '';
+  input6.value = '';
+  input7.value = '';
+});
